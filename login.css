@@ -5,7 +5,7 @@
 }
 body {
   background-image: url("/2817799.jpg");
-  background-color: hsl(356, 100%, 66%);
+  background-color: gray;
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
