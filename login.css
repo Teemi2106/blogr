@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("/2817799.jpg");
+  background-color: hsl(356, 100%, 66%);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: register;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 900;
+  animation-name: register;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+}
+@keyframes register {
+  0% {
+    opacity: 0;
+    backdrop-filter: blur(0);
+  }
+  50% {
+    opacity: 1;
+    backdrop-filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    backdrop-filter: blur(0);
+  }
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  min-height: 80vh;
+  border-radius: 0 2rem 0 2rem;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+form input {
+  width: 70%;
+  height: 2rem;
+  border-radius: 2rem 0 2rem 0;
+  text-align: center;
+  background-color: hsl(356, 100%, 66%);
+  font-size: large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: white;
+  font-weight: 600;
+}
+form button {
+  margin-top: 3rem;
+  width: 7rem;
+  height: 2rem;
+  background-color: hsl(356, 100%, 66%);
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  box-shadow: 0 0 5px 0;
+}
